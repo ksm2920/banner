@@ -1,0 +1,68 @@
+@import 'grid';
+@import 'responsive';
+
+body {
+    margin: 10px;
+    padding: 0;
+    overflow-x: 0;
+}
+
+.ad {
+    position: relative;
+    cursor: pointer;
+    margin: auto;
+}
+
+.user-alone, .user-group {
+    position: absolute;
+    top: 78px;
+    left: 25px;
+}
+
+.ball {
+    width: 18px;
+    position: absolute;
+    top: 22px;
+    left: 224px;
+}
+
+.disney {
+    width: 70px;
+    opacity: 50%;
+    position: absolute;
+    top: 90px;
+    left: 37px;
+}
+
+.bell-mask {
+    width: 70px;
+    position: absolute;
+    top: 77px;
+    left: 117px;
+    opacity: 55%;
+}
+
+.confetti {
+    position: absolute;
+    top: 0;
+}
+
+.cloud {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+}
+
+.text-moment {
+    position: absolute;
+    width: 130px;
+    top: 150px;
+    left: 85px;
+}
+
+.download-btn {
+    position: absolute;
+    width: 80px;
+    top: 200px;
+    left: 110px;
+}
