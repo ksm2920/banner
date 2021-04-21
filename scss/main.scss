@@ -4,26 +4,31 @@
 body {
     margin: 10px;
     padding: 0;
-    overflow-x: 0;
+    overflow-x: hidden;
 }
 
 .ad {
     position: relative;
-    cursor: pointer;
     margin: auto;
+    overflow: hidden;
+    width: 300px;
 }
 
-.user-alone, .user-group {
+.user-alone {
     position: absolute;
     top: 78px;
     left: 25px;
 }
 
 .ball {
-    width: 18px;
     position: absolute;
     top: 22px;
     left: 224px;
+    width: 18px;
+    height: 18px;
+    .cls-1{
+        fill:#00aff0;
+    }
 }
 
 .disney {
@@ -40,6 +45,13 @@ body {
     top: 77px;
     left: 117px;
     opacity: 55%;
+}
+
+.user-group {
+    position: absolute;
+    top: 78px;
+    left: 25px;
+    visibility: hidden;
 }
 
 .confetti {
@@ -61,8 +73,15 @@ body {
 }
 
 .download-btn {
+    cursor: pointer;
     position: absolute;
     width: 80px;
     top: 200px;
     left: 110px;
+    .cls-1{
+        fill:#0b64a4;
+    }
+    .cls-2{
+        fill:#fff;
+    }
 }

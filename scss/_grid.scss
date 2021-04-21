@@ -37,6 +37,7 @@
     grid-area: ad;
     grid-row: 5;
 }
+
 .main-footer {
     grid-area: footer;
     padding: 10px;
@@ -57,7 +58,7 @@
 
 @include tablet {
     .content {
-        height: 52vh;
+        height: 58vh;
     }
     .side {
         grid-column: col-start 0 / span 2;
@@ -86,7 +87,7 @@
 
 @include desktop {
     .content {
-        height: 72vh;
+        height: 78vh;
     }
     .side {
         grid-column: col-start 0  / span 2;

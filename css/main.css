@@ -45,7 +45,7 @@
 
 @media screen and (min-width: 500px) {
   .content {
-    height: 52vh; }
+    height: 58vh; }
   .side {
     grid-column: col-start 0 / span 2;
     grid-row: 3;
@@ -62,7 +62,7 @@
 
 @media screen and (min-width: 768px) {
   .content {
-    height: 72vh; }
+    height: 78vh; }
   .side {
     grid-column: col-start 0  / span 2;
     grid-row: 2;
@@ -79,23 +79,27 @@
 body {
   margin: 10px;
   padding: 0;
-  overflow-x: 0; }
+  overflow-x: hidden; }
 
 .ad {
   position: relative;
-  cursor: pointer;
-  margin: auto; }
+  margin: auto;
+  overflow: hidden;
+  width: 300px; }
 
-.user-alone, .user-group {
+.user-alone {
   position: absolute;
   top: 78px;
   left: 25px; }
 
 .ball {
-  width: 18px;
   position: absolute;
   top: 22px;
-  left: 224px; }
+  left: 224px;
+  width: 18px;
+  height: 18px; }
+  .ball .cls-1 {
+    fill: #00aff0; }
 
 .disney {
   width: 70px;
@@ -110,6 +114,12 @@ body {
   top: 77px;
   left: 117px;
   opacity: 55%; }
+
+.user-group {
+  position: absolute;
+  top: 78px;
+  left: 25px;
+  visibility: hidden; }
 
 .confetti {
   position: absolute;
@@ -127,7 +137,12 @@ body {
   left: 85px; }
 
 .download-btn {
+  cursor: pointer;
   position: absolute;
   width: 80px;
   top: 200px;
   left: 110px; }
+  .download-btn .cls-1 {
+    fill: #0b64a4; }
+  .download-btn .cls-2 {
+    fill: #fff; }
