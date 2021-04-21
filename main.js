@@ -1,11 +1,11 @@
 window.addEventListener('load', function() {
-    const tl = new gsap.timeline({ repeat: -1, repeatDelay: 3});
-
-    tl.to('#ball', { x: 18 }, { x: 0, ease: Bounce.easeOut, duration: 5 });
-    tl.fromTo('#masks', { y: 0 }, { y: -260, duration: 0.5 })
-    tl.fromTo('#bell-mask', { y: -150 }, { y: 0, ease: Bounce.easeOut, duration: 1 });
-    tl.set('#user-group', {visibility: 'visible'});
-    tl.fromTo('#confetti', { y: -150 }, { y:0, ease: Elastic.easeOut, duration: 1 });
-    tl.fromTo('#cloud, #moment, #download', {y: 200 }, { y: 0 });
-    // tl.fromTo('#download');
+    const tl = new gsap.timeline({ repeat: -1, repeatDelay: 5});
+    
+    tl.to('#ball', 0.5, { x: 18 }, { x: 0, ease: Bounce.easeOut});
+    tl.fromTo('#masks', 1, { y: 0 }, { y: -260})
+    tl.fromTo('#bell-mask', 1,  { y: -150 }, { y: 0, ease: Bounce.easeOut});
+    tl.to('#user-group', 1.5, {opacity: 1});
+    tl.fromTo('#confetti', 1.5, { y: -150 }, { y:0, ease: Elastic.easeOut});
+    tl.staggerFromTo('#cloud, #moment, #download', 2 , {opacity:0, y:90, ease: Elastic.easeOut.config(1.2, 0.5)}, {opacity:1, y:0, ease: Elastic.easeOut.config(1.2, 0.5)}, 0.03);
+    tl.fromTo('#download', 0.3, { scale: 1}, { scale: 1.2, repeat: 4, ease: Power0.easeOut, yoyo:true});
 }, false);

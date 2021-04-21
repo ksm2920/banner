@@ -119,7 +119,7 @@ body {
   position: absolute;
   top: 78px;
   left: 25px;
-  visibility: hidden; }
+  opacity: 0; }
 
 .confetti {
   position: absolute;
