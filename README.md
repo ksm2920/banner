@@ -4,16 +4,12 @@ The task is to make a banner with GSAP (GreenSock Animation Platform).
 
 ## Functionality
 
-- The banner to introduce a new feature "Party mode" with animation.
+- A banner that introduces a new fictional feature called "Party mode" with GSAP animation.
 
-# Installation
+# To view the animation
+open index.html with a browser or 
+go to this link 
 
-## npm package
+# How to edit
+npm install
 
-Gulp, Gulp-sass, Gulp-rename
-
-- npm i 
-
-**After successful installation**
-
-Open index.html
